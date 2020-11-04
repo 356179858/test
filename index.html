@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/table.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body::-webkit-scrollbar {
+			        display: none;
+			    }
+					body,html{overflow-x:auto;};
+			thead{
+				overflow: hidden;
+			}
+			table tr {
+				overflow-x: auto;
+				white-space: nowrap;
+			}		  
+			table th {
+				display: inline-block;
+				width: 100px;
+				height: 100%;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app" class="box">
+			<table cellpadding="0" cellspacing="0" class="ul">
+				<thead>
+					<tr>
+						<th>上榜股票（共只）</th>
+						<th>涨幅</th>
+						<th>净买入</th>
+						<th>净卖出</th>
+					</tr>
+				</thead>
+				<!-- <li v-for="(item,index) in items" :key="index">
+					<div></div>
+				</li> -->
+			</table>
+		</div>
+
+		<script>
+			// let ul = document.getElementsByClassName('ul')[0];
+			// let scrollX = ul.scrollLeft;
+			// console.log(ul,scrollX);
+		</script>
+	</body>
+</html>
